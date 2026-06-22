@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet" href="css/admin-style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="admin-header">
+
+
+<h1>
+School Admin Panel
+</h1>
+
+
+<a href="login.html">
+Logout
+</a>
+
+
+</header>
+
+
+
+
+
+<div class="dashboard">
+
+
+
+<div class="card">
+
+<h2>
+1200+
+</h2>
+
+<p>
+Students
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>
+50
+</h2>
+
+<p>
+Teachers
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>
+25
+</h2>
+
+<p>
+Notices
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="menu">
+
+
+<a href="notices.html">
+Manage Notices
+</a>
+
+
+<a href="events.html">
+Manage Events
+</a>
+
+
+<a href="gallery.html">
+Manage Gallery
+</a>
+
+
+<a href="users.html">
+Manage Users
+</a>
+
+
+</div>
+
+<script>
+
+
+const token =
+localStorage.getItem(
+"adminToken"
+);
+
+
+
+if(!token){
+
+
+window.location.href=
+"login.html";
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
